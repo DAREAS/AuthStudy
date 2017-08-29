@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<div class="arrow body-content">
+    <form asp-controller="Login" asp-action="Logar" method="post">
+        <div class="form-group navbar-form">
+            <label for="userName">UserName:</label>
+            <input id="userName" name="userName" type="text" placeholder="UserName"/>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" placeholder="Password" asp-all-route-data="password" />  
+        </div>
+        <input type="submit" value="Enviar"/>
+    </form>
+</div>
