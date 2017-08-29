@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace AuthStudy.Filters
@@ -10,7 +7,10 @@ namespace AuthStudy.Filters
     {
        public void OnAuthorization(AuthorizationFilterContext context)
         {
-            var ctx = context;
+            if (context.HttpContext.User.Identity.IsAuthenticated)
+            {
+                context.HttpContext.User.IsInRole(context.ActionDescriptor.Id);
+            }
         }
     }
 }
