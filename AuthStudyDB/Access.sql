@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Access]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] VARCHAR(175) NOT NULL
+)

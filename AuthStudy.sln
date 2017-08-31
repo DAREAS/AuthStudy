@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthStudy", "AuthStudy\AuthStudy.csproj", "{DD6B6E6B-97CD-4308-930B-4FC95A45FF30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthStudy", "AuthStudy\AuthStudy.csproj", "{DD6B6E6B-97CD-4308-930B-4FC95A45FF30}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AuthStudyDB", "AuthStudyDB\AuthStudyDB.sqlproj", "{A9A239FD-3C49-464B-8570-55A952C720B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{DD6B6E6B-97CD-4308-930B-4FC95A45FF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD6B6E6B-97CD-4308-930B-4FC95A45FF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD6B6E6B-97CD-4308-930B-4FC95A45FF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A239FD-3C49-464B-8570-55A952C720B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A239FD-3C49-464B-8570-55A952C720B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A239FD-3C49-464B-8570-55A952C720B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A9A239FD-3C49-464B-8570-55A952C720B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A239FD-3C49-464B-8570-55A952C720B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A239FD-3C49-464B-8570-55A952C720B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
