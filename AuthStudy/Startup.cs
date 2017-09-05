@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AuthStudy.Filters;
+﻿using AuthStudy.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +22,7 @@ namespace AuthStudy
             {
                 config.Filters.Add(typeof(AuthorizationFilter));
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,9 +37,9 @@ namespace AuthStudy
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            
             app.UseStaticFiles();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

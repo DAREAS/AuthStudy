@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using System.Security.Claims;
+using AuthStudy.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.KeyVault.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -30,6 +25,21 @@ namespace AuthStudy.Controllers
             }));
 
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPatch]
+        public IActionResult Patch(int id, [FromBody] Delta<User> user)
+        {
+            var userNew = new User
+            {
+                Id = 1,
+                Username = "dareas",
+                Password = "xxxxxxxx"
+            };
+
+            user.Patch(userNew);
+
+            return new JsonResult(userNew);
         }
     }
 }
